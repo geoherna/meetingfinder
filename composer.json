@@ -1,0 +1,37 @@
+{
+
+    "name": "geoherna/MeetingFinder",
+    "description": "Code for finding AA and NA meetings by location.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "George Hernandez",
+            "homepage": "https://github.com/geoherna",
+            "email": "geoherna@outlook.com"
+        }
+    ],
+
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*",
+        "phpdocumentor/phpdocumentor":"2.*"
+    },
+
+    "autoload": {
+        "psr-4" : {
+            "MeetingFinder\\" : "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {"MeetingFinder\\": "tests/"}
+    },
+    "require": {
+        "fguillot/json-rpc": "dev-master",
+        "mjaschen/phpgeo": "^1.3"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/geoherna/JsonRPC"
+        }
+    ]
+}
